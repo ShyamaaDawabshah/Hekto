@@ -1,0 +1,48 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.home{
+  color: #FB2E86;
+}
+.btn{
+
+  background-color: #FB2E86;
+  width :52px;
+  }
+
+.text{
+width: 240px;
+}
+
+.color_optaion{
+display: flex;
+gap: 0.5px;
+justify-content: center;
+
+}
+
+.prouduct_info{
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+gap:4px;
+
+}
+.prouduct_details{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+gap:12px;
+padding: 10px;
+}
+@media screen and (min-width: 1201px) {
+  body {
+    background-color: red;
+  }
+}
+
