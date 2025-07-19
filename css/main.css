@@ -5,44 +5,60 @@
     box-sizing: border-box;
 }
 .home{
-  color: #FB2E86;
-}
+  color: #FB2E86;}
+
+.ul li:hover {
+  color: #FB2E86; /* زهري */
+  cursor: pointer;}
+
+  
 .btn{
-
   background-color: #FB2E86;
-  width :52px;
-  }
-
-.text{
-width: 240px;
-}
-
+ }
+ 
 .color_optaion{
 display: flex;
 gap: 0.5px;
 justify-content: center;
 
 }
-
-.prouduct_info{
-display: flex;
-flex-direction: column;
-justify-content: center;
-text-align: center;
-gap:4px;
-
+.icon{
+  display: none;
 }
-.prouduct_details{
-  display: flex;
-flex-direction: column;
-justify-content: center;
-text-align: center;
-gap:12px;
-padding: 10px;
+/* أخفي عنصر البحث في الشاشات الصغيرة */
+@media (max-width: 915px) {
+  .search {
+    display: none;
+  }
+  .icon{
+  display: block;
 }
-@media screen and (min-width: 1201px) {
-  body {
-    background-color: red;
+}
+/*section fetarurd chair */
+.client .row {
+ 
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  overflow-x: auto;
+  gap:10px;
+  
+}
+.logoo{
+ width: calc(( 100% - 40px ) / 5); 
+}
+.client{
+padding: 0 20px;
+}
+.client .logoo img{
+  width:100%;
+ padding:0.5rem;
+
+} 
+@media screen and (max-width: 1000px) {
+  .logoo {
+    width: calc((100% - 30px) / 3);
   }
 }
 
+  
