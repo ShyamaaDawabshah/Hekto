@@ -13,7 +13,7 @@
 
 .ul{
    list-style-type: none;
-    gap:10px;
+    gap:20px;
 }
 
 .row{
@@ -43,7 +43,7 @@ margin-top: 1rem;
     margin-top:20px;
    
 }
-/* featurd product*/
+
 .top-catogry{
   margin-bottom: 10rem;
 }
@@ -94,7 +94,7 @@ background-color:#00009D;
   padding: 3rem;
 }
 .featured-product h2 {
-    margin-bottom: 2rem; /* أو أي رقم يناسب التصميم */
+    margin-bottom: 2rem; 
 }
 .latest-prouduct h2{
     margin-bottom:0.5rem; 
@@ -181,7 +181,7 @@ color: darkgrey;
   .top {
   width: 25%;
   height: 25%;
-  aspect-ratio: 1 / 1; /* يخليها مربعة */
+  aspect-ratio: 1 / 1; 
   border-radius: 50%;
   background-color: #f9f9f9;
   text-align: center;
@@ -263,3 +263,6 @@ flex-wrap: nowrap;
 justify-content: right;
   align-items: right;
   }
+.Navbar {
+  padding-top: 1rem;      
+ }

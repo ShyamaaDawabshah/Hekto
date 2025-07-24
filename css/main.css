@@ -8,10 +8,12 @@
   color: #FB2E86;}
 
 .ul li:hover {
-  color: #FB2E86; /* زهري */
+  color: #FB2E86; 
   cursor: pointer;}
 
-  
+.home.row{
+gap:20px;
+  }
 .btn{
   background-color: #FB2E86;
  }
@@ -25,7 +27,7 @@ justify-content: center;
 .icon{
   display: none;
 }
-/* أخفي عنصر البحث في الشاشات الصغيرة */
+
 @media (max-width: 915px) {
   .search {
     display: none;
@@ -34,31 +36,474 @@ justify-content: center;
   display: block;
 }
 }
-/*section fetarurd chair */
-.client .row {
- 
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
+
+
+
+
+.client .container {
   overflow-x: auto;
-  gap:10px;
   
 }
-.logoo{
- width: calc(( 100% - 40px ) / 5); 
-}
-.client{
-padding: 0 20px;
-}
-.client .logoo img{
-  width:100%;
- padding:0.5rem;
 
-} 
-@media screen and (max-width: 1000px) {
-  .logoo {
-    width: calc((100% - 30px) / 3);
+.client .row {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+
+.client .logoo img {
+
+  padding: 0.5rem;
+}
+
+
+@media (max-width: 900px) {
+  .client .container {
+    overflow-x: auto;
   }
 }
 
+.background {
+  background-image: url('../img/products/Rectangle\ 102.webp'); 
+  background-size: cover;  
+  background-size: auto;             
+  background-position: center;         
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ margin-top: 9rem;
+ height: 400px;
+ 
+
+}
+.background h2{
+  color: blue;
+  align-items: center;
+  padding: 2rem;
+ 
+
+}
+.background button{
+  margin: 2rem;
+  padding: 10px;
+  align-items: center;
+}
+.bk1{
+  background-image: url('../img/products/promotion\ bg.webp');
+  background-repeat: no-repeat;
+ background-size: auto;
+  background-size: cover;              
+
+  background-position: center;          
+ height: 400px;
+ margin-top:2rem ;
+ margin-bottom:2rem ;
+  display: flex;               
+  justify-content: center;      
+  align-items: center;         
+
+}
+.sofa{
+  padding: 5rem ;
+  width: 1000px;
+  align-items: center;
+}
+.hero{
+  background-color: #F2F0FF;
+}
   
+.hero-info{
+  justify-content:center;
+  align-items: flex-start;
+  
+  flex-direction: column;
+  gap: 20px;
+
+  
+}
+.hero.row{
+ 
+  display: flex;
+  align-items: flex-start;
+ justify-content: space-between; 
+}
+
+
+.chair img{
+  width:70%;
+ 
+ 
+ 
+}
+.hero-info a{
+  color: #F2F0FF;
+  padding: 0.5rem;
+  text-decoration: none;
+
+}
+.hero-info p,
+.hero-info h1,
+.hero-info a {
+  display: block;
+  margin-bottom: 16px; 
+}
+.hero-info h1{
+  font-weight: 700; 
+}
+.footer {
+  background-color: #f9f9f9;
+  color: #8A8FB9;
+  padding: 3rem 1rem;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-column h2,
+.footer-column h3 {
+  color: #000000;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 21px; 
+}
+
+.footer-column ul li a {
+  color: #8A8FB9;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #000000;
+}
+
+.footer-column p {
+  color: #8A8FB9;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.subscribe-form input[type="email"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1 1 auto;
+  min-width: 200px;
+}
+
+.subscribe-form button {
+  padding: 0.5rem 1rem;
+  background-color: #8A8FB9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.subscribe-form button:hover {
+  background-color: #f85bb7;
+}
+/* ------------------ hover ------------------ */
+.prouduct {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.prouduct:hover {
+  background-color: #fce4f6;
+  box-shadow: 0 0 20px rgba(251, 46, 134, 0.15);
+  transform: translateY(-6px);
+}
+.prouduct .details-btn {
+  display: none;
+  margin-top: 8px;
+  padding: 6px 14px;
+  background-color: #FB2E86;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.prouduct:hover .details-btn {
+  display: block;
+}
+.prouduct::after {
+  content: "🔍";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 18px;
+  display: none;
+}
+.prouduct:hover::after {
+  display: block;
+}
+
+/* ------------------ [2] TRENDING PRODUCT ------------------ */
+.trend {
+  transition: all 0.4s ease-in-out;
+  border-radius: 12px;
+}
+.trend:hover {
+  background-color: #f3e5f5;
+  box-shadow: 0 0 25px rgba(123, 31, 162, 0.25);
+  transform: translateY(-6px);
+}
+
+/* ------------------ [3] LATEST PRODUCT ------------------ */
+.product-craft {
+  transition: all 0.3s ease-in-out;
+}
+.product-craft:hover {
+  background-color: #fdf3fa;
+  box-shadow: 0 0 12px rgba(251, 46, 134, 0.1);
+  transform: translateY(-4px);
+}
+
+/* ------------------ [4] WHAT SHOPEX OFFER ------------------ */
+.offer {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+.offer:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* ------------------ [5] TOP CATEGORIES ------------------ */
+.top {
+  transition: all 0.3s ease-in-out;
+}
+.top:hover {
+  background-color: #f2f0ff;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.05);
+}
+
+/* ------------------ [6] LAST SECTION CARDS ------------------ */
+.cart {
+  transition: all 0.4s ease-in-out;
+}
+.cart:hover {
+  transform: translateY(-8px);
+}
+.cart img {
+  transition: transform 0.4s ease-in-out;
+}
+.cart:hover img {
+  transform: scale(1.05) rotate(1deg);
+}
+.infolast h3,
+.infolast p {
+  transition: color 0.3s ease-in-out;
+}
+.cart:hover .infolast h3 {
+  color: #FB2E86;
+}
+.cart:hover .infolast p {
+  color: #333;
+}
+
+/* ------------------ [7] BUTTONS GENERAL ------------------ */
+.btn {
+  transition: all 0.3s ease-in-out;
+  background-color: #FB2E86;
+  color: white;
+}
+.btn:hover {
+  background-color: #c71e66;
+  transform: translateY(-2px);
+}
+
+/* ------------------ [8] NAV ITEMS HOVER ------------------ */
+.ul li {
+  transition: all 0.2s ease-in-out;
+}
+.ul li:hover {
+  transform: translateY(-2px);
+  color: #FB2E86;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 95%;
+    margin: auto;
+  }
+
+  .hero-text {
+    left: 5%;
+    max-width: 90%;
+  }
+}
+
+
+@media (max-width: 992px) {
+ 
+  .featured-products,
+  .products,
+  .trending,
+  .latest-products,
+  .top-categories,
+  .offer-section,
+  .cards-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  
+  .prouduct,
+  .trend,
+  .product-craft,
+  .offer,
+  .top,
+  .cart {
+    flex: 1 1 45%;
+  }
+
+  .hero-text {
+    top: 40%;
+    left: 5%;
+    transform: translateY(-40%);
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  
+  .prouduct,
+  .trend,
+  .product-craft,
+  .offer,
+  .top,
+  .cart {
+    flex: 1 1 100%;
+  }
+
+  
+  .product_details,
+  .infolast {
+    text-align: center;
+  }
+
+  .details-btn,
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  
+  .hero-text {
+    position: static;
+    transform: none;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+
+  .hero-text h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+
+
+  .navbar ul {
+    display: none;
+  }
+
+  .navbar .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero-text p {
+    font-size: 0.85rem;
+  }
+
+  .product_details span,
+  .infolast p {
+    font-size: 0.8rem;
+  }
+
+  .details-btn {
+    font-size: 0.75rem;
+    padding: 6px 12px;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+    padding: 8px 14px;
+  }
+
+  .footer,
+  .footer .column {
+    text-align: center;
+  }
+}
